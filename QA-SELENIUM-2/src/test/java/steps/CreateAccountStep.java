@@ -1,7 +1,9 @@
 package steps;
 
+import org.junit.Assert;
 import org.junit.Test;
 import pages.CreateAccountPage;
+import pages.LogedPage;
 import util.Browser;
 
 public class CreateAccountStep extends Browser {
@@ -9,6 +11,7 @@ public class CreateAccountStep extends Browser {
     AccountStep accountStep = new AccountStep();
     CreateAccountPage createAccountPage = new CreateAccountPage();
 
+    LogedPage logedPage = new LogedPage();
     @Test
     public void criarrConta() {
         homePageSteps.signIn();
@@ -35,5 +38,9 @@ public class CreateAccountStep extends Browser {
         createAccountPage.phoneMobile();
         createAccountPage.alias();
         createAccountPage.submitAccountBtn();
+
+        Assert.assertEquals(logedPage.verificarUserLogado(), "Gustavo Teichmann");
+        Assert.assertEquals(logedPage.verificarLogado(), "Sign out");
+
     }
 }

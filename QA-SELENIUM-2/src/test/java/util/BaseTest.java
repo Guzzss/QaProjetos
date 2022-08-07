@@ -1,6 +1,9 @@
 package util;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.interactions.Actions;
+
+import java.util.concurrent.TimeUnit;
 
 public class BaseTest extends Elements{
 
@@ -23,5 +26,15 @@ public class BaseTest extends Elements{
         waitElement(by);
         element(by).clear();
 
+    }
+
+    public static void hover(By by){
+        waitElement(by);
+        Actions builder = new Actions(driver);
+        builder.moveToElement(driver.findElement(by)).perform();
+    }
+
+    public static void esperar(int tempo) {
+        driver.manage().timeouts().implicitlyWait(tempo, TimeUnit.SECONDS);
     }
 }

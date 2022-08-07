@@ -31,9 +31,9 @@ public class Browser {
 
     }
 
-    //    @After
-    //    public void finalizarBrowser() {
-    //        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS); // definir um tempo para iniciar
-    //        driver.quit();
-    //    }
+    @After
+    public void finalizarBrowser() {
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS); // definir um tempo para iniciar
+        driver.quit();
+    }
 }

@@ -148,4 +148,51 @@ public class CreateAccountPage {
     public void submitAccountBtn() {
         BaseTest.click(submitAccount);
     }
+
+    public String recuperarSenha(){
+       return BaseTest.getText(password);
+    }
+
+    public String recuperarFirstName(){
+        return BaseTest.getText(firstName);
+    }
+
+    public String recuperarLastName(){
+        return BaseTest.getText(lastName);
+    }
+
+    public String recuperarFirstNameAddres(){
+        return BaseTest.getText(firstnameAddress);
+    }
+    public String recuperarLastNameAddres(){
+        return BaseTest.getText(lastnameAddres);
+    }
+
+    public String recuperarAddres(){
+        return BaseTest.getText(address1);
+    }
+    public String recuperarCity(){
+        return BaseTest.getText(city);
+    }
+
+    public String recuperarState(){
+        return BaseTest.getText(state);
+    }
+
+    public String recuperarZipCode(){
+        return BaseTest.getText(postcode);
+    }
+
+    public String recuperarCountry(){
+        return BaseTest.getText(id_country);
+    }
+
+    public String recuperarMobilePhone(){
+        return BaseTest.getText(phone_mobile);
+    }
+
+    public String recuperarMyAddress(){
+        return BaseTest.getText(alias);
+    }
+
 }

@@ -14,9 +14,9 @@ public class JogadorAceitacao {
 
      JogadorService jogadorService = new JogadorService();
 
-    public String lerJson(String caminhojson) throws IOException {
-        return new String(Files.readAllBytes(Paths.get(caminhojson)));
-    }
+        public String lerJson(String caminhojson) throws IOException {
+            return new String(Files.readAllBytes(Paths.get(caminhojson)));
+        }
 
     @Test
     public void postJogador() throws IOException {

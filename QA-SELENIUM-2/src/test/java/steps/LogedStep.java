@@ -2,6 +2,7 @@ package steps;
 
 import org.junit.Test;
 import pages.LogedPage;
+import util.BaseTest;
 import util.Browser;
 
 public class LogedStep extends Browser {
@@ -10,8 +11,16 @@ public class LogedStep extends Browser {
 
     @Test
     public void search() {
-        createAccountStep.criarrConta();
         logedPage.search();
         logedPage.clicarNoSearch();
+    }
+
+    @Test
+    public void clicarNoWhiteList(){
+        logedPage.ClicarNoWhiteList();
+    };
+
+    public void ClicarNoVoltarPraLogedPage() {
+        logedPage.ClicarNoVoltarPraLogedPage();
     }
 }

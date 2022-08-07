@@ -6,7 +6,6 @@ import util.Browser;
 
 public class HomePageSteps extends Browser {
 
-
     HomePage homePage = new HomePage();
 
     @Test
