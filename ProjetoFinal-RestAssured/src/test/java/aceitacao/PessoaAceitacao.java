@@ -114,7 +114,7 @@ public class PessoaAceitacao {
         ListarPessoasDTO resultService = pessoaService.getListarPessoasComSucesso(0, 10);
         Assert.assertEquals(resultService.getSize(), 10);
         Assert.assertEquals(resultService.getPage(), 0);
-        Assert.assertEquals(resultService.getContent().get(0).getNome(), "Eduardo Miranda");
+        Assert.assertEquals(resultService.getContent().get(0).getNome(), "Gabriel Luppi");
     }
 
     @Test
@@ -181,7 +181,7 @@ public class PessoaAceitacao {
     @Test
     public void getPessoaListaComContatosPorIdComSucesso() {
         PessoaComContatosDTO[] resultService = pessoaService.getPessoaListaComContatosPorIdComSucesso(724);
-        Object idContato = 129;
+        Object idContato = 132;
         Assert.assertEquals(resultService[0].getNome(), "João Andrey");
         Assert.assertEquals(resultService[0].getCpf(), "12345678911");
         Assert.assertEquals(resultService[0].getContatos().get(0).getTipoContato(), "RESIDENCIAL");
@@ -205,19 +205,19 @@ public class PessoaAceitacao {
 
     @Test
     public void getPessoaListaCompletaPorIdComSucesso() {
-        Object idEndereco = 418;
-        Object idPessoa = 1;
+        Object idEndereco = 414;
+        Object idPessoa = 4;
 
-        PessoaCompletaDTO[] resultService = pessoaService.getPessoaListaCompletaPorIdComSucesso(1);
-        Assert.assertEquals(resultService[0].getNome(), "Gabriel Luppi");
-        Assert.assertEquals(resultService[0].getCpf(), "56448825002");
+        PessoaCompletaDTO[] resultService = pessoaService.getPessoaListaCompletaPorIdComSucesso(4);
+        Assert.assertEquals(resultService[0].getNome(), "Harry Potter");
+        Assert.assertEquals(resultService[0].getCpf(), "12345645634");
         Assert.assertEquals(resultService[0].getIdPessoa(), idPessoa);
 
-        Assert.assertEquals(resultService[0].getEnderecos().get(0).getTipo(), "COMERCIAL");
+        Assert.assertEquals(resultService[0].getEnderecos().get(0).getTipo(), "RESIDENCIAL");
         Assert.assertEquals(resultService[0].getEnderecos().get(0).getIdEndereco(), idEndereco);
-        Assert.assertEquals(resultService[0].getEnderecos().get(0).getCidade(), "Porto Alegre");
-        Assert.assertEquals(resultService[0].getEnderecos().get(0).getEstado(), "RS");
-        Assert.assertEquals(resultService[0].getEnderecos().get(0).getPais(), "Brasil");
+        Assert.assertEquals(resultService[0].getEnderecos().get(0).getCidade(), "Little Whinging");
+        Assert.assertEquals(resultService[0].getEnderecos().get(0).getEstado(), "Surrey");
+        Assert.assertEquals(resultService[0].getEnderecos().get(0).getPais(), "Inglaterra");
     }
 
     @Test

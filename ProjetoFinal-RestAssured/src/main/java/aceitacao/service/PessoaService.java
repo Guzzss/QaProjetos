@@ -8,7 +8,7 @@ import static io.restassured.RestAssured.given;
 
 public class PessoaService {
 
-    String token = "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ2ZW1zZXItYXBpIiwianRpIjoiNDAwIiwiY2FyZ29zIjpbXSwiaWF0IjoxNjU5NzQyMTExLCJleHAiOjE2NTk4Mjg1MTF9.oKgvU4plC6XSnZh07TGbGk7EiIjwYCGJeyu8S7am2jw";
+    String token = "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ2ZW1zZXItYXBpIiwianRpIjoiNDAwIiwiY2FyZ29zIjpbXSwiaWF0IjoxNjU5OTY5MzE2LCJleHAiOjE2NjAwNTU3MTZ9.O22b7-mrUR3b7Du7e3XJ_sff_OdVd-CxDMc4m9ub5p4";
 
     String baseUrl = "http://dbc-pessoa-api.herokuapp.com";
 
