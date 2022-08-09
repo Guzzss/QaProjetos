@@ -1,0 +1,26 @@
+nmp - node package manager -> gerenciador de pacotes
+npx - node package executor -> executar o cypress
+
+1- Expecificar que vamos criar um projeto node
+2- instalar dependencia do cypress
+3- criar a estrutura de pasta inicial do cypress
+4- criar teste simples sem padrão
+
+
+suite de testes
+  testes
+    comando do teste
+  testes
+    comando do teste     
+
+
+     cy.get('seletor')
+
+    cy.get('seletor').click();
+    cy.get('seltoor').type('texto');
+    cy.get('seletor').select('');
+
+    // validações
+
+    cy.get('seletor').should('have.length', 1);
+    cy.get('seletor').should('contain', '');
