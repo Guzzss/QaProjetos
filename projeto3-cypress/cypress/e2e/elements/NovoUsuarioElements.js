@@ -16,5 +16,5 @@ export default class NovoUsuarioElements {
   ultimoNomeCriado = "body > div.row > div.col.s9 > div:nth-child(3) > div > p:nth-child(2)";
   emailCriado = "body > div.row > div.col.s9 > div:nth-child(3) > div > p:nth-child(3)";
 
-  erroMsg = '//*[@id="error_explanation"]/h2';
+  erroMsg = '#error_explanation > h2';
 } 
