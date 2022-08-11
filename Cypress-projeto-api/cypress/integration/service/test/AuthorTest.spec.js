@@ -49,9 +49,9 @@ context('Authors', () => {
     cy.get('@response').should((response) => {
        expect(response.status).to.eq(200);
        expect(response.body).to.be.not.null;
-       expect(responde.body[0].idBook).to.eq(idBook);
+       expect(response.body[0].idBook).to.eq(idBook);
      })
-                               
+      
   })
 
   it('Post - Criar Autor', () => {
